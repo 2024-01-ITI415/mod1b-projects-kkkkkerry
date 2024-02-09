@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 47
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,10 +318,10 @@ MonoBehaviour:
     m_ReferencingInstanceIDs: 
     m_SceneHandles: 
     m_ShowAllHits: 0
-    m_SkipHidden: 0
+    m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/00-Scenes
+    - Assets/02-Mission Demolition/Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -329,30 +329,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/00-Scenes
+  - Assets/02-Mission Demolition/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\23040\Documents\GitHub\mod1b-projects-kkkkkerry
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 47}
-    m_SelectedIDs: 284d0000
-    m_LastClickedID: 19752
-    m_ExpandedIDs: 000000001c4d00001e4d0000204d000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a24c0000
+    m_LastClickedID: 19618
+    m_ExpandedIDs: 000000008e4c0000924c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: 03-Prototype1
+      m_OriginalName: 03-Prototype1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 19624
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -366,7 +366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c4d00001e4d0000204d0000
+    m_ExpandedIDs: 000000008e4c0000904c0000924c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_SkipHiddenPackages: 0
+  m_SkipHiddenPackages: 1
   m_DirectoriesAreaWidth: 207
 --- !u!114 &13
 MonoBehaviour:
@@ -508,7 +508,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: faf8ffff
+      m_ExpandedIDs: a4f9ffff30fbfffff44c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -888,9 +888,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 13, z: 0}
+    m_Target: {x: -4.9394093, y: -5.5410895, z: -1.0479527}
     speed: 2
-    m_Value: {x: 0, y: 13, z: 0}
+    m_Value: {x: -4.9394093, y: -5.5410895, z: -1.0479527}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -936,13 +936,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.476
   m_Rotation:
-    m_Target: {x: -0.024264317, y: -0.059349958, z: 0.0014433037, w: -0.99794054}
+    m_Target: {x: 0.022443546, y: -0.726584, z: -0.023760626, w: -0.68629944}
     speed: 2
-    m_Value: {x: -0.024264317, y: -0.059349958, z: 0.0014433035, w: -0.9979405}
+    m_Value: {x: 0.022407886, y: -0.72761285, z: -0.023794271, w: -0.685209}
   m_Size:
-    m_Target: 8.069466
+    m_Target: 7.8215537
     speed: 2
-    m_Value: 8.069466
+    m_Value: 7.4847403
   m_Ortho:
     m_Target: 0
     speed: 2
