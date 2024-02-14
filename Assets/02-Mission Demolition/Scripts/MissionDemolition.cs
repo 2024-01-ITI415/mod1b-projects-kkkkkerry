@@ -17,7 +17,7 @@ public class MissionDemolition : MonoBehaviour
     [Header("Set in Inspector")]
     public Text uitLevel; //The UIText_Level Text
     public Text uitShots; // UIText_Shotsd text
-    public Text uitBotton;
+    public Text uitButton;
     public Vector3 castlePos; // the place to put castles
     public GameObject[] castles; // An array of the castles
 
@@ -46,7 +46,7 @@ public class MissionDemolition : MonoBehaviour
             Destroy(castle);
         }
         //Destroy old projectiles if they exist
-        GameObject[] gos = GameObject.FindGameObjectsWithTag("Projetile");
+        GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
         foreach (GameObject pTemp in gos)
         {
             Destroy(pTemp);
@@ -58,7 +58,7 @@ public class MissionDemolition : MonoBehaviour
         shotsTaken = 0;
 
         //Resets the camera
-        switchView("Show Both");
+        SwitchView("Show Both");
         ProjectileLine.S.Clear();
 
         //Resets the goal
@@ -87,7 +87,7 @@ public class MissionDemolition : MonoBehaviour
             // Zoom out
             SwitchView("Show Both");
             // Start the next level in 2 seconds
-            invoke("NextLevel", 2f);
+            Invoke("NextLevel", 2f);
         }
     }
 
@@ -105,14 +105,14 @@ public class MissionDemolition : MonoBehaviour
     {
         if (eView == "")
         {
-            eView = uitBotton.text;
+            eView = uitButton.text;
         }
         showing = eView;
         switch (showing)
         {
             case "Show Slingshot":
                 FollowCam.POI = null;
-                uitBotton.text = "Show Castle";
+                uitButton.text = "Show Castle";
                 break;
 
             case "Show Castle":

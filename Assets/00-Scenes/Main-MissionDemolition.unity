@@ -580,13 +580,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792234105}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 792234111}
+        m_TargetAssemblyTypeName: MissionDemolition, Assembly-CSharp
+        m_MethodName: SwitchView
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -771,6 +771,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06ec10feb75b244389948db2f7c5316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uitLevel: {fileID: 1535356421}
+  uitShots: {fileID: 330658158}
+  uitButton: {fileID: 919705186}
+  castlePos: {x: 50, y: -9.5, z: 0}
+  castles:
+  - {fileID: 6852369268910378102, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
+  - {fileID: 6852369268910378102, guid: 00497257c2fa79e4b94714e2d3cd7dae, type: 3}
+  - {fileID: 6852369268910378102, guid: f33116e747916ca4bba430e00b4ee34d, type: 3}
+  level: 0
+  levelMax: 0
+  shotsTaken: 0
+  castle: {fileID: 0}
+  mode: 0
+  showing: Show Slingshot
 --- !u!1 &822717103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,63 +1473,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &1595361310
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2229152645460455274, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6852369268910378102, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
-      propertyPath: m_Name
-      value: Castle_1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 017bead487cbca444a2a838ec62bf478, type: 3}
 --- !u!1 &1756522997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,7 +1597,6 @@ SceneRoots:
   - {fileID: 831655856}
   - {fileID: 301065139}
   - {fileID: 393522670}
-  - {fileID: 1595361310}
   - {fileID: 1407415230}
   - {fileID: 1141849304}
   - {fileID: 61038955}
