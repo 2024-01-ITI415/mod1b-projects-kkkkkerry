@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
+    public GameObject winTextObject;
     public float jumpAmount = 5.0f;
     private Rigidbody rb;
     private int count;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         rb = GetComponent<Rigidbody>();
         SetCountText();
+        winTextObject.SetActive(false);
     }
 
     void OnMove(InputValue movementValue)
@@ -31,6 +34,10 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+        if (count >= 74)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 
     private void FixedUpdate()
@@ -47,7 +54,11 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
-          
+        if (other.gameObject.CompareTag("DZ"))
+        {
+            SceneManager.LoadScene("Main-Prototype 1");
+        }
+
     }
 
     // Update is called once per frame
