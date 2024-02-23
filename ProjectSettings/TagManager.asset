@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
-  - Apple
+  - PickUp
   layers:
   - Default
   - TransparentFX
